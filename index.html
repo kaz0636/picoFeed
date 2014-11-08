@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="PicoFeed : Modern PHP library to parse RSS/Atom feeds">
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>PicoFeed by fguillot</title>
+    <title>PicoFeed</title>
   </head>
 
   <body>
 
-    <header>
-      <div class="container">
-        <h1>PicoFeed</h1>
-        <h2>Modern PHP library to parse RSS/Atom feeds</h2>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/fguillot/picoFeed">View on GitHub</a>
 
-        <section id="downloads">
-          <a href="https://github.com/fguillot/picoFeed/zipball/master" class="btn">Download as .zip</a>
-          <a href="https://github.com/fguillot/picoFeed/tarball/master" class="btn">Download as .tar.gz</a>
-          <a href="https://github.com/fguillot/picoFeed" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
+          <h1 id="project_title">PicoFeed</h1>
+          <h2 id="project_tagline">Modern PHP library to parse RSS/Atom feeds</h2>
 
-    <div class="container">
-      <section id="main_content">
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/fguillot/picoFeed/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/fguillot/picoFeed/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
         <h1>
-<a name="picofeed" class="anchor" href="#picofeed"><span class="octicon octicon-link"></span></a>PicoFeed</h1>
+<a id="picofeed" class="anchor" href="#picofeed" aria-hidden="true"><span class="octicon octicon-link"></span></a>PicoFeed</h1>
 
 <p>PicoFeed was originally developed for <a href="http://miniflux.net">Miniflux</a>, a minimalist and open source news reader.</p>
 
@@ -41,7 +44,7 @@ PicoFeed is tested with a lot of different feeds and it's simple and easy to use
 <p><a href="https://scrutinizer-ci.com/g/fguillot/picoFeed/?branch=master"><img src="https://scrutinizer-ci.com/g/fguillot/picoFeed/badges/quality-score.png?b=master" alt="Scrutinizer Code Quality"></a></p>
 
 <h2>
-<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h2>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features</h2>
 
 <ul>
 <li>Simple and fast</li>
@@ -60,7 +63,7 @@ PicoFeed is tested with a lot of different feeds and it's simple and easy to use
 </ul>
 
 <h2>
-<a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h2>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requirements</h2>
 
 <ul>
 <li>PHP &gt;= 5.3</li>
@@ -70,31 +73,57 @@ PicoFeed is tested with a lot of different feeds and it's simple and easy to use
 </ul>
 
 <h2>
-<a name="authors" class="anchor" href="#authors"><span class="octicon octicon-link"></span></a>Authors</h2>
+<a id="authors" class="anchor" href="#authors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors</h2>
 
 <ul>
 <li>Original author: <a href="http://fredericguillot.com/">Frédéric Guillot</a>
 </li>
-<li>Contributors: See pull-requests, issues tracker and commit history</li>
+<li>Major Contributors:
+
+<ul>
+<li><a href="https://github.com/Raydiation">Bernhard Posselt</a></li>
+<li><a href="https://github.com/Xeoncross">David Pennington</a></li>
+</ul>
+</li>
 </ul>
 
 <h2>
-<a name="documentation" class="anchor" href="#documentation"><span class="octicon octicon-link"></span></a>Documentation</h2>
+<a id="real-world-usage" class="anchor" href="#real-world-usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Real world usage</h2>
+
+<ul>
+<li><a href="http://anythingnew.co">AnythingNew</a></li>
+<li><a href="http://miniflux.net">Miniflux</a></li>
+<li><a href="https://github.com/owncloud/news">Owncloud News</a></li>
+</ul>
+
+<h2>
+<a id="documentation" class="anchor" href="#documentation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Documentation</h2>
 
 <ul>
 <li><a href="docs/installation.markdown">Installation</a></li>
-<li><a href="docs/opml-import.markdown">OPML file importation</a></li>
-<li><a href="docs/opml-export.markdown">OPML file exportation</a></li>
+<li><a href="docs/tests.markdown">Running unit tests</a></li>
 <li><a href="docs/feed-parsing.markdown">Feed parsing</a></li>
 <li><a href="docs/feed-creation.markdown">Feed creation</a></li>
 <li><a href="docs/favicon.markdown">Favicon fetcher</a></li>
+<li><a href="docs/opml-import.markdown">OPML file importation</a></li>
+<li><a href="docs/opml-export.markdown">OPML file exportation</a></li>
 <li><a href="docs/grabber.markdown">Web scraping</a></li>
+<li><a href="docs/exceptions.markdown">Exceptions</a></li>
 <li><a href="docs/debugging.markdown">Debugging</a></li>
 <li><a href="docs/config.markdown">Configuration</a></li>
 </ul>
       </section>
     </div>
 
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">PicoFeed maintained by <a href="https://github.com/fguillot">fguillot</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
     
+
   </body>
 </html>
