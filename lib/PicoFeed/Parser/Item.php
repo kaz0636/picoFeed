@@ -90,6 +90,14 @@ class Item
      * @var string
      */
     public $enclosure_type = '';
+    
+    /**
+     * Item enclosure length
+     *
+     * @access public
+     * @var integer
+     */
+    public $enclosure_length = '';
 
     /**
      * Item language
@@ -109,7 +117,7 @@ class Item
     {
         $output = '';
 
-        foreach (array('id', 'title', 'url', 'date', 'language', 'author', 'enclosure_url', 'enclosure_type') as $property) {
+        foreach (array('id', 'title', 'url', 'date', 'language', 'author', 'enclosure_url', 'enclosure_type', 'enclosure_length') as $property) {
             $output .= 'Item::'.$property.' = '.$this->$property.PHP_EOL;
         }
 
@@ -195,6 +203,18 @@ class Item
     {
         return $this->enclosure_type;
     }
+    
+    /**
+     * Get enclosure length
+     *
+     * @access public
+     * $return string
+     */
+    public function getEnclosureLength()
+    {
+        return $this->enclosure_length;
+    }
+
 
     /**
      * Get language

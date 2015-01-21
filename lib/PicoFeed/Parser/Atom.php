@@ -244,6 +244,7 @@ class Atom extends Parser
         if ($enclosure) {
             $item->enclosure_url = Url::resolve((string) $enclosure['href'], $feed->getSiteUrl());
             $item->enclosure_type = (string) $enclosure['type'];
+            $item->enclosure_length = (integer) $enclosure['length'];
         }
     }
 
