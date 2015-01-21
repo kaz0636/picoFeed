@@ -97,7 +97,7 @@ class Item
      * @access public
      * @var integer
      */
-    public $enclosure_length = '';
+    public $enclosure_length = 0;
 
     /**
      * Item language
