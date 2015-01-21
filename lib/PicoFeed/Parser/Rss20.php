@@ -280,6 +280,7 @@ class Rss20 extends Parser
             }
 
             $item->enclosure_type = isset($entry->enclosure['type']) ? (string) $entry->enclosure['type'] : '';
+            $item->enclosure_length = isset($entry->enclosure['length']) ? (string) $entry->enclosure['length'] : 0;
             $item->enclosure_url = Url::resolve($item->enclosure_url, $feed->getSiteUrl());
         }
     }

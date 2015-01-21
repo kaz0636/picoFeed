@@ -215,7 +215,6 @@ class Item
         return $this->enclosure_length;
     }
 
-
     /**
      * Get language
      *
